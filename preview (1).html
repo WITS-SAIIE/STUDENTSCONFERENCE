@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>National Student SAIIE Conference 2026</title>
+
+<style>
+
+:root {
+    --saiie-blue: #0B4DA2;
+    --wits-gold: #C5A13F;
+    --dark: #1c1c1c;
+    --light: #f4f6fa;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--light);
+    color: var(--dark);
+}
+
+/* TOP BRAND BAR */
+
+.brand-bar {
+    background: white;
+    padding: 15px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 3px solid var(--saiie-blue);
+}
+
+.brand-bar img {
+    height: 70px;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: linear-gradient(rgba(11,77,162,0.9), rgba(11,77,162,0.9)),
+                url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.btn {
+    background: var(--wits-gold);
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a8842f;
+}
+
+/* SECTION STYLING */
+
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    text-align: center;
+    color: var(--saiie-blue);
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+/* CARD DESIGN */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: var(--saiie-blue);
+}
+
+/* SPONSOR SECTION */
+
+.sponsor-tier {
+    border-left: 6px solid var(--wits-gold);
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+/* REGISTRATION */
+
+.registration {
+    background: var(--saiie-blue);
+    color: white;
+    text-align: center;
+}
+
+.registration h2 {
+    color: white;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer a {
+    color: var(--wits-gold);
+    text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+<!-- BRANDING BAR -->
+<div class="brand-bar">
+    <img src="assets/saiie-logo.png" alt="SAIIE Logo">
+    <img src="assets/wits-logo.png" alt="Wits University Logo">
+</div>
+
+<!-- HERO -->
+<header class="hero">
+    <h1>First National Student SAIIE Conference 2026</h1>
+    <p>
+        Hosted at the University of the Witwatersrand<br>
+        10–11 October 2026
+    </p>
+    <a href="#register" class="btn">Register Now</a>
+</header>
+
+<!-- ABOUT -->
+<section>
+    <h2>About the Conference</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>National Platform</h3>
+            <p>
+                Bringing together final-year Industrial Engineering students
+                from all 26 South African universities.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Project Showcase</h3>
+            <p>
+                Students present capstone design and research projects
+                to industry leaders and academic panels.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Recruitment Opportunity</h3>
+            <p>
+                Consulting and engineering firms gain access to the
+                country’s top Industrial Engineering talent pool.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SPONSORS -->
+<section>
+    <h2>Sponsorship & Industry Partnership</h2>
+
+    <div class="sponsor-tier">
+        <h3>Rhodium Partner (Headline Sponsor)</h3>
+        <ul>
+            <li>Keynote address opportunity</li>
+            <li>10-minute recruitment presentation</li>
+            <li>Premium exhibition stand</li>
+            <li>Full CV database access</li>
+            <li>8 complimentary tickets</li>
+        </ul>
+    </div>
+
+    <div class="sponsor-tier">
+        <h3>Platinum Sponsor</h3>
+        <ul>
+            <li>Exhibition stand</li>
+            <li>Commercial slot</li>
+            <li>Logo & website link</li>
+            <li>5 complimentary tickets</li>
+        </ul>
+    </div>
+
+    <div class="sponsor-tier">
+        <h3>Gold Sponsor</h3>
+        <ul>
+            <li>Exhibition stand</li>
+            <li>Branding visibility</li>
+            <li>3 complimentary tickets</li>
+        </ul>
+    </div>
+</section>
+
+<!-- REGISTRATION -->
+<section id="register" class="registration">
+    <h2>Registration</h2>
+    <p><strong>SAIIE Student Members:</strong> Discounted Rate</p>
+    <p><strong>Non-SAIIE Students:</strong> Full Rate</p>
+    <p><strong>Industry Delegates:</strong> Corporate Rate</p>
+    <a href="#" class="btn">Secure Your Seat</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Contact: <a href="mailto:ntando.mndawe1@students.wits.ac.za">
+        ntando.mndawe1@students.wits.ac.za
+    </a></p>
+    <p>© 2026 National Student SAIIE Conference</p>
+</footer>
+
+</body>
+</html>
